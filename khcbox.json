@@ -1,0 +1,14 @@
+{
+  "ignore": [
+    "README.md",
+    ".gitignore"
+  ],
+  "commands": {
+    "Compile": "khcbox compile",
+    "Migrate": "khcbox migrate",
+    "Test contracts": "khcbox test"
+  },
+  "hooks": {
+    "post-unpack": "bash post-unpack.sh && rm post-unpack.sh && npm install"
+  }
+}
